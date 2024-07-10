@@ -1,0 +1,41 @@
+{
+  "name": "image-resizer-electron",
+  "productName": "Image Resizer",
+  "version": "1.0.0",
+  "description": "App to resize image dimensions",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build",
+    "build:osx": "build --mac"
+  },
+  "build": {
+    "productName": "Image Resizer",
+    "appId": "com.Image.Resizer",
+    "asar": true,
+    "protocols": {
+      "name": "Image Resizer",
+      "schemes": [
+        "Image Resizer"
+      ]
+    },
+    "mac": {
+      "target": [
+        "default"
+      ]
+    },
+    "dmg": {
+      "title": "Image Resizer"
+    }
+  },
+  "author": "Traversy",
+  "license": "MIT",
+  "dependencies": {
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electron": "^31.1.0",
+    "electron-builder": "^24.13.3"
+  }
+}
