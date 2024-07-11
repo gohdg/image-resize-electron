@@ -20,12 +20,14 @@
       ]
     },
     "mac": {
+      "icon": "assets/icons/mac/icon.icns",
       "target": [
         "default"
       ]
     },
     "dmg": {
-      "title": "Image Resizer"
+      "title": "Image Resizer",
+      "icon": "assets/icons/mac/icon.icns"
     }
   },
   "author": "Traversy",
